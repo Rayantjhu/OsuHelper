@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-using Newtonsoft.Json;
-using OsuHelper.Models;
-using Ookii.Dialogs.Wpf;
-using System.Drawing;
-using OsuHelper.Properties;
+﻿using System.Windows;
 using OsuHelper.Backend;
+using OsuParsers.Decoders;
+using OsuParsers.Database;
+using OsuHelper.Properties;
+using System.IO;
+using OsuParsers.Database.Objects;
+using System;
+using OsuHelper.Backend;
+using OsuHelper.Models;
 
 namespace OsuHelper
 {

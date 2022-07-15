@@ -67,7 +67,7 @@ namespace OsuHelper.Models
         /// <returns></returns>
         public static bool operator ==(OsuReplay replay1, OsuReplay replay2)
         {
-            return replay1.BeatmapMD5Hash == replay2.BeatmapMD5Hash;
+            return replay1.ReplayMD5Hash == replay2.ReplayMD5Hash;
         }
 
         public static bool operator !=(OsuReplay replay1, OsuReplay replay2)

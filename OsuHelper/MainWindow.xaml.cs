@@ -24,6 +24,7 @@ namespace OsuHelper
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Content = new ReplaysPage();
         }
 
         private void ButtonClick(object sender, RoutedEventArgs e)
