@@ -29,11 +29,15 @@ namespace OsuHelper
 
         private void ButtonClick(object sender, RoutedEventArgs e)
         {
-            var buttonType = ((Button)sender).Tag;
+            var buttonType = ((RadioButton)sender).Content;
 
             switch (buttonType)
             {
-                case "SettingsPage":
+                case "Replays":
+                    MainFrame.Content = new ReplaysPage();
+                    break;
+
+                case "Settings":
                     MainFrame.Content = new SettingsPage();
                     break;
             }

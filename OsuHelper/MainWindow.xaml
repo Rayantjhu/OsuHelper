@@ -14,16 +14,17 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition MinWidth="100" Width="auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Column="0" Grid.Row="0">
-            <Button Tag="SettingsPage" Content="Settings" Click="ButtonClick"/>
+        <StackPanel Grid.Column="0" Grid.Row="0" Margin="0,5,0,5">
+            <RadioButton x:Name="ReplaysBtn" Style="{StaticResource {x:Type ToggleButton}}" Content="Replays" Click="ButtonClick" IsChecked="True"/>
+            <RadioButton Style="{StaticResource {x:Type ToggleButton}}" Content="Settings" Click="ButtonClick"/>
         </StackPanel>
-        
+
         <Frame NavigationUIVisibility="Hidden" x:Name="MainFrame" Grid.Column="1" Grid.Row="0"></Frame>
-        
+
     </Grid>
 </Window>
 
